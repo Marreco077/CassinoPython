@@ -1,0 +1,79 @@
+.container {
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.game .linha {
+    display: flex; /* Alterado para flex para melhor controle do layout */
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.game .linha .item {
+    display: inline-flex; /* Permite centralizar o conteúdo */
+    font-size: 20px;
+    background-color: grey;
+    padding: 10px; /* Ajustado para um padding menor */
+    border-radius: 10px;
+    text-align: center;
+    flex: 1; /* Faz com que cada item ocupe igualmente o espaço disponível */
+}
+
+.game .linha .item.filled {
+    background-color: green;
+}
+
+/* Estilo para os ícones dos slots */
+.slot-icon {
+    width: 50px; /* Tamanho ajustado */
+    height: 50px; /* Tamanho ajustado */
+    display: inline-block;
+    margin-right: 5px; /* Espaço entre a imagem e o texto */
+}
+
+.btn-girar {
+    width: 100%;
+    border: none;
+    padding: 16px;
+    border-radius: 30px;
+    background-color: orange;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.error {
+    background-color: #F44336;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    color: black;
+    font-weight: 600;
+    font-size: 20px;
+    text-align: center;
+}
+
+.actions {
+    display: flex;
+}
+
+.telinha {
+    display: grid;
+    grid-template-columns: .6fr .4fr;
+    gap: 10px;
+}
+
+.logs {
+    overflow-y: auto;
+    height: 180px;
+    background-color: #EEEEEE;
+    border-radius: 10px;
+}
+
+#toggle-automatic {
+    background-color: red;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    font-weight: 600;
+}
